@@ -25,6 +25,7 @@ void LCD_cursor(int x, int y)
 ****************************************************************************************/
 void LCD_text(char * text_ptr)
 {
+
   	volatile char * LCD_display_ptr = (char *) CHAR_LCD_16X2_BASE;	// 16x2 character display
 
 	while ( *(text_ptr) )
