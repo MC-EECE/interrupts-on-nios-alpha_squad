@@ -23,9 +23,9 @@ int main(void)
  	pKey = &Key;
     /* Register ISRs */
 
-	alt_irq_register(INTERVAL_PUSHBUTTON_IRQ, (void*)pKey, buttonISR);
-	alt_irq_register(INTERVAL_TIMER_IRQ, (void*) pCount, timerISR);
 
+	alt_irq_register(INTERVAL_TIMER_IRQ, (void*) pCount, timerISR);
+	alt_irq_register(PUSHBUTTONS_IRQ, (void*) pCount, buttonISR);
     /* Initialize Timer */
 	IOWR(INTERVAL_TIMER_BASE, 2, 0xFFFF&INTERVAL_TIMER_FREQ);
 	IOWR(INTERVAL_TIMER_BASE, 3, 0xFFFF&(INTERVAL_TIMER_FREQ>>16));

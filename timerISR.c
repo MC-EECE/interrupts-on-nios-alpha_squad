@@ -8,7 +8,6 @@
 #include "System.h"
 #include "alt_types.h"
 #include "HexDisplay.h"
-#include "lcd.h"
 #include "seven_seg_bcd.h"
 #include "seven_seg_hex.h"
 #include "buttonISR.h"
