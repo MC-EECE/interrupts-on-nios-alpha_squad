@@ -4,7 +4,7 @@
  *  Created on: Apr 18, 2015
  *      Author: brent.horine
  */
-#include "System.h"
+#include "system.h"
 #include "lcd.h"
 /****************************************************************************************
  * Subroutine to move the LCD cursor

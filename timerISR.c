@@ -1,16 +1,16 @@
 /*
  * timerISR.c
  *
- *  Created on: 
- *      Author: 
+ *  Created on: 10/11/2017
+ *      Author: David Thomas Jude  Chung Oakes
  */
-#include "io.h"
-#include "System.h"
+#include "system.h"
 #include "alt_types.h"
 #include "HexDisplay.h"
 #include "seven_seg_bcd.h"
 #include "seven_seg_hex.h"
 #include "buttonISR.h"
+#include "io.h"
 
 /*****************************************************************************
  * Interval timer interrupt service routine
